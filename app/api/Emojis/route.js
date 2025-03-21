@@ -17,15 +17,12 @@ export async function POST(req) {
       const prompt = `Translate the given emoji to text in english but it would be panjabi language: ${data}`;
       const model = genAi.getGenerativeModel({ model: "gemini-1.5-flash" });
       const result = await model.generateContent(prompt);
-
       const resp = await result.response.text(); 
-
       return NextResponse.json({ response: resp, msg: "Success" });
     }
     const prompt = `Translate the given emoji to text in ${language} language: ${data} in two line `;
     const model = genAi.getGenerativeModel({ model: "gemini-1.5-flash" });
     const result = await model.generateContent(prompt);
-
     const resp = await result.response.text(); // Ensure response extraction
 
     return NextResponse.json({ response: resp, msg: "Success" });
