@@ -40,7 +40,7 @@ function Page() {
           <option value="english">English</option>
           <option value="hindi">Hindi</option>
           <option value="pahadi(kumauni)">Pahadi</option>
-          <option value="punjabi(English)">Punjabi</option>
+          <option value="panjabi_in_English">Punjabi</option>
           <option value="garhwali">Garhwali</option>
         </select>
       </div>
